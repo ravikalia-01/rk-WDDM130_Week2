@@ -1,15 +1,26 @@
-const express = require('express')
+const express = require('express');
 const path = require('path');
-const app = express()
-const HTTP_PORT = process.env.PORT || 8080; // assign a port
 
-app.use(express.static('public'));
+const app = express();
+const PORT = 3000;
 
+// Serve static files from /public
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Routes
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/views/home.html'));
-})
+  res.sendFile(path.join(__dirname, 'views', 'index.html'));
+});
 
 app.get('/about', (req, res) => {
-res.sendFile(path.join(__dirname, '/views/about.html'));});
+  res.sendFile(path.join(__dirname, 'views', 'about.html'));
+});
 
-app.listen(HTTP_PORT, () => console.log(`server listening on: ${HTTP_PORT}`));
+app.get('/contact', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'contact.html'));
+});
+
+// Start server
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});

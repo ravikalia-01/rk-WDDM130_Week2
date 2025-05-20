@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about" class="nav-link">About</a>
+        <a href="/contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button class="profile-btn">Profile</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+    <img src="/img/customer-service.png" alt="Contact Image">
+
+    <p>If you have questions, ideas, or partnership requests, feel free to reach out. We're here to help and collaborate.</p>
+
+    <h2>Send Us a Message</h2>
+    <form action="#" method="POST" class="contact-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <h2>Other Ways to Reach Us</h2>
+    <ul class="contact-info">
+      <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+      <li>Phone: +1 (555) 123-4567</li>
+      <li>Address: 789 Developer Lane, Code City, JS 10210</li>
+    </ul>
+  </main>
+</body>
+</html>
