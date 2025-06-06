@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css" />
+  <title>Project</title>
+ 
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Navigation Bar -->
+  <header class="bg-blue-600 text-white py-4">
+    <nav class="container mx-auto flex justify-between items-center">
+      <div class="flex space-x-6">
+        <a href="/" class="text-xl font-semibold hover:text-blue-200">Home</a>
+        <a href="/about" class="text-xl font-semibold hover:text-blue-200">About</a>
+        <a href="/contact" class="text-xl font-semibold hover:text-blue-200">Contact</a>
+        <a href="/project" class="text-xl font-semibold hover:text-blue-200">Project</a>
+      </div>
+      <div>
+        <a href="/profile" class="nav-link">
+        <button class="bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-blue-700">Profile</button>
+        </a>
+    </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto p-8">
+    <h1 class="text-4xl font-bold mb-4 text-center">Welcome to Our Project Page</h1>
+    <img src="/img/3d-house.png" alt="Project Image" class="w-full max-w-3xl mx-auto mb-6">
+
+    <p class="text-lg mb-8 text-center">
+      This is the project page where we showcase our work and ongoing projects. Stay tuned for more information!
+    </p>
+
+    <h2 class="text-3xl font-semibold text-blue-600 mb-4">What We Do</h2>
+    <ul class="list-disc list-inside space-y-2 text-lg">
+      <li>Build innovative web applications</li>
+      <li>Provide educational resources and tutorials</li>
+      <li>Contribute to open-source projects and communities</li>
+    </ul>
+
+    <h2 class="text-3xl font-semibold text-blue-600 mt-8 mb-4">Featured Projects</h2>
+
+    <!-- Project Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+        <h3 class="text-2xl font-semibold mb-2">Project 1: Web App for Collaboration</h3>
+        <p class="text-gray-600 mb-4">A powerful tool designed to help teams collaborate efficiently on web projects.</p>
+        <a href="/projects/project1" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+        <h3 class="text-2xl font-semibold mb-2">Project 2: E-commerce Platform</h3>
+        <p class="text-gray-600 mb-4">A fully-featured e-commerce platform that supports various payment gateways and shipping options.</p>
+        <a href="/projects/project2" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+        <h3 class="text-2xl font-semibold mb-2">Project 3: Open-source Library</h3>
+        <p class="text-gray-600 mb-4">An open-source library aimed at improving front-end development workflows.</p>
+        <a href="/projects/project3" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

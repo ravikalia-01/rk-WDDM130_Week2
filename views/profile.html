@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="/css/main.css" />
+  <!-- Tailwind CSS + DaisyUI CDN -->
+ <!-- <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daisyui@4.0.7/dist/full.js"></script>-->
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <div class="navbar bg-blue-600 text-white px-4">
+    <div class="flex-1">
+      <a class="btn btn-ghost normal-case text-xl text-white" href="/">MyApp</a>
+    </div>
+    <div class="flex-none space-x-2">
+      <a href="/" class="btn btn-ghost text-white">Home</a>
+      <a href="/about" class="btn btn-ghost text-white">About</a>
+      <a href="/contact" class="btn btn-ghost text-white">Contact</a>
+      <a href="/project" class="btn btn-ghost text-white">Project</a>
+      <!-- Profile Dropdown -->
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full ring ring-white ring-offset-base-100 ring-offset-2">
+            <img src="https://th.bing.com/th/id/OIP.x5seIcpLKzj0ajfdkJI9qwHaHa?w=197&h=197&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="User Avatar"/>
+          </div>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-gray-800">
+          <li><a href="/profile">View Profile</a></li>
+          <li><a href="/settings">Settings</a></li>
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Profile Card -->
+  <main class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-lg shadow">
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <!-- Profile Picture -->
+      <div class="avatar">
+        <div class="w-32 rounded-full ring ring-blue-500 ring-offset-base-100 ring-offset-2">
+          <img src="https://th.bing.com/th/id/OIP.x5seIcpLKzj0ajfdkJI9qwHaHa?w=197&h=197&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt="Profile Picture"/>
+        </div>
+      </div>
+      <!-- Profile Info -->
+      <div class="flex-1">
+        <h1 class="text-3xl font-bold">Ravi Kumar</h1>
+        <p class="text-gray-600">Full Stack Developer at OpenTech</p>
+        <p class="mt-2">Passionate about open source, clean code, and building scalable web apps.</p>
+        <div class="mt-4 space-x-2">
+          <button class="btn btn-primary">Edit Profile</button>
+          <button class="btn btn-outline btn-secondary">Settings</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bio Section -->
+    <div class="mt-8">
+      <h2 class="text-xl font-semibold mb-2">About Me</h2>
+      <p class="text-gray-700">
+        I have over 6 years of experience in software development, specializing in JavaScript, Node.js, and modern frontend frameworks like React and Vue. I enjoy teaching, contributing to open-source, and learning new technologies.
+      </p>
+    </div>
+
+    <!-- Skills -->
+    <div class="mt-6">
+      <h2 class="text-xl font-semibold mb-2">Skills</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="badge badge-primary">HTML</span>
+        <span class="badge badge-secondary">CSS</span>
+        <span class="badge badge-accent">JavaScript</span>
+        <span class="badge badge-info">React</span>
+        <span class="badge badge-success">Node.js</span>
+        <span class="badge badge-warning">MongoDB</span>
+        <span class="badge badge-error">Git</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer footer-center p-4 bg-blue-600 text-white mt-12">
+    <div>
+      <p>&copy; 2025 MyApp. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
