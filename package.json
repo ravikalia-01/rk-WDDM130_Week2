@@ -1,5 +1,27 @@
 {
   "dependencies": {
-    "express": "^5.1.0"
-  }
+    "express": "^5.1.0",
+    "y": "^0.3.2"
+  },
+  "devDependencies": {
+    "saas": "^1.0.0"
+  },
+  "name": "rk-wddm130_week2",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000r\u0000k\u0000-\u0000W\u0000D\u0000D\u0000M\u00001\u00003\u00000\u0000_\u0000W\u0000e\u0000e\u0000k\u00002\u0000\r\u0000 \u0000",
+  "main": "modEx1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravikalia-01/rk-WDDM130_Week2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ravikalia-01/rk-WDDM130_Week2/issues"
+  },
+  "homepage": "https://github.com/ravikalia-01/rk-WDDM130_Week2#readme"
 }
