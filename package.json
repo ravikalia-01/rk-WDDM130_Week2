@@ -3,6 +3,7 @@
     "@tailwindcss/typography": "^0.5.16",
     "daisyui": "^4.12.24",
     "express": "^5.1.0",
+    "multer": "^2.0.1",
     "y": "^0.3.2"
   },
   "devDependencies": {
